@@ -38,7 +38,13 @@ public class CommonFunctions extends WebDriver {
 	public  void objClick(WebElement obj) {
 		WebDriverWait wait = new WebDriverWait(driver, 60);
 		wait.until(ExpectedConditions.visibilityOf(obj));
-		TestRunner.logger.log(LogStatus.PASS, obj.getText() + " object is clicked");
+		if (obj.getText().length() > 1) {
+			System.out.println("GetText" + obj.getText().length());
+			TestRunner.logger.log(LogStatus.PASS, obj.getText() + " object is clicked");
+		} else if (obj.getAttribute("value").length() > 1) {
+			System.out.println(obj.getAttribute("value").length()); 
+			TestRunner.logger.log(LogStatus.PASS, obj.getAttribute("value") + " object is clicked");
+		}
 		obj.click();
 	}
 	
@@ -47,8 +53,8 @@ public class CommonFunctions extends WebDriver {
 		wait.until(ExpectedConditions.visibilityOf(obj));
 		
 		obj.clear();
-		obj.sendKeys(str);
-		TestRunner.logger.log(LogStatus.PASS, str  +  " is provided in " + obj.toString());
+		obj.sendKeys(str);		
+		TestRunner.logger.log(LogStatus.PASS, str  +  " is provided in " + obj.getAttribute("name"));
 	}
 	
 	public  void dataVerification(WebElement obj, String str) {

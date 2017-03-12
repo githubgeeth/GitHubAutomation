@@ -8,7 +8,7 @@ public class PFCreateRepository {
 	@FindBy(xpath = "//a[@href='/new' and contains(text(),'New repository') and contains(@class,'btn')]") 
 	public WebElement NewRepository;
 	
-	@FindBy(xpath = "//a[contains(@class,'btn-secondary') and text()='Start a project']") 
+	@FindBy(xpath = "//a[contains(@class,'btn shelf') and text()='Start a project']") 
 	public WebElement StartaProject;
 	
 	@FindBy(xpath = "//input[@id='repository_name' and @name='repository[name]']") 

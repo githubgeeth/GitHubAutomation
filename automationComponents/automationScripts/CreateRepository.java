@@ -18,6 +18,7 @@ public class CreateRepository extends WebDriver{
 	public String issuename, issuedesc, projname, projdesc, repname;
 	ExcelReader er = new ExcelReader();
 	
+	//Classname object
 	GitHubLogin ghlobj = PageFactory.initElements(driver, GitHubLogin.class);	
 	PFCreateRepository crobj = PageFactory.initElements(driver, PFCreateRepository.class);
 	CommonFunctions cfobj = new CommonFunctions();
@@ -34,7 +35,7 @@ public class CreateRepository extends WebDriver{
 		//cfobj.objsetText(ghlobj.PwCEmail, prop.getProperty("emailid"));
 		//cfobj.objClick(ghlobj.GitHubLogIn);
 		
-		//Subba's private GitHub
+		//GitHub login
 		cfobj.objClick(ghlobj.Signin);
 		cfobj.objsetText(ghlobj.Username, prop.getProperty("Username"));
 		cfobj.objsetText(ghlobj.Password, prop.getProperty("Password"));
@@ -43,8 +44,8 @@ public class CreateRepository extends WebDriver{
 
 	@Given("^Click on Start a project to create a repository and verify Code tab is displayed \"([^\"]*)\"$")
 	public void click_on_Start_a_project_to_create_a_repository_and_verify_Code_tab_is_displayed(String arg1) throws Throwable {
-		//cfobj.objClick(crobj.StartaProject);
-		cfobj.objClick(crobj.NewRepository);
+		cfobj.objClick(crobj.StartaProject);
+		//cfobj.objClick(crobj.NewRepository);
 		repname = er.getData("TC001", 4, 1) + "_" + df.format(dt);
 		cfobj.objsetText(crobj.Repositoryname, repname);
 		cfobj.objClick(crobj.Createrepository);

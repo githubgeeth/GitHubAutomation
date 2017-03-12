@@ -29,7 +29,7 @@ import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "Feature" , glue = { "automationScripts" }, plugin = {
+@CucumberOptions(features = "Feature/001_CreateRepository.feature" , glue = { "automationScripts" }, plugin = {
 		"com.cucumber.listener.ExtentCucumberFormatter:" })
 
 public class TestRunner extends WebDriver {
@@ -51,11 +51,11 @@ public class TestRunner extends WebDriver {
 	@BeforeTest
 	public void createReport() throws Exception {
 
-		File file = new File(System.getProperty("user.dir") + "\\Screenshots\\");
+		/*File file = new File(System.getProperty("user.dir") + "\\Screenshots\\");
 
 		for (File file2 : file.listFiles())
 			if (!file2.isDirectory())
-				file2.delete();
+				file2.delete();*/
 	}
 
 	@BeforeMethod

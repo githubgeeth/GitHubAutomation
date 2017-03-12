@@ -2,27 +2,27 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Main Test Suite" duration-ms="65229" started-at="2017-02-05T10:35:37Z" finished-at="2017-02-05T10:36:43Z">
+  <suite name="Default suite" duration-ms="78185" started-at="2017-03-12T09:54:32Z" finished-at="2017-03-12T09:55:50Z">
     <groups>
       <group name="cucumber">
         <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@4bec1f0c]" name="feature" class="testRunner.TestRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="GitHub POC" duration-ms="65229" started-at="2017-02-05T10:35:37Z" finished-at="2017-02-05T10:36:43Z">
+    <test name="Default test" duration-ms="78185" started-at="2017-03-12T09:54:32Z" finished-at="2017-03-12T09:55:50Z">
       <class name="testRunner.TestRunner">
-        <test-method status="PASS" signature="createReport()[pri:0, instance:testRunner.TestRunner@4bec1f0c]" name="createReport" is-config="true" duration-ms="132" started-at="2017-02-05T16:05:37Z" finished-at="2017-02-05T16:05:37Z">
+        <test-method status="PASS" signature="createReport()[pri:0, instance:testRunner.TestRunner@4bec1f0c]" name="createReport" is-config="true" duration-ms="10" started-at="2017-03-12T15:24:32Z" finished-at="2017-03-12T15:24:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunner.TestRunner@4bec1f0c]" name="setUpClass" is-config="true" duration-ms="2165" started-at="2017-02-05T16:05:37Z" finished-at="2017-02-05T16:05:40Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunner.TestRunner@4bec1f0c]" name="setUpClass" is-config="true" duration-ms="713" started-at="2017-03-12T15:24:32Z" finished-at="2017-03-12T15:24:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="ex1()[pri:0, instance:testRunner.TestRunner@4bec1f0c]" name="ex1" is-config="true" duration-ms="7737" started-at="2017-02-05T16:05:40Z" finished-at="2017-02-05T16:05:48Z">
+        <test-method status="PASS" signature="ex1()[pri:0, instance:testRunner.TestRunner@4bec1f0c]" name="ex1" is-config="true" duration-ms="14743" started-at="2017-03-12T15:24:33Z" finished-at="2017-03-12T15:24:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ex1 -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@4bec1f0c]" name="feature" duration-ms="52061" started-at="2017-02-05T16:05:48Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2017-02-05T16:06:40Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@4bec1f0c]" name="feature" duration-ms="57243" started-at="2017-03-12T15:24:47Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2017-03-12T15:25:45Z">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testRunner.TestRunner@4bec1f0c]" name="tearDown" is-config="true" duration-ms="2744" started-at="2017-02-05T16:06:40Z" finished-at="2017-02-05T16:06:42Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testRunner.TestRunner@4bec1f0c]" name="tearDown" is-config="true" duration-ms="5339" started-at="2017-03-12T15:25:45Z" finished-at="2017-03-12T15:25:50Z">
           <params>
             <param index="0">
               <value>
@@ -44,11 +44,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunner.TestRunner@4bec1f0c]" name="tearDownClass" is-config="true" duration-ms="10" started-at="2017-02-05T16:06:42Z" finished-at="2017-02-05T16:06:42Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunner.TestRunner@4bec1f0c]" name="tearDownClass" is-config="true" duration-ms="4" started-at="2017-03-12T15:25:50Z" finished-at="2017-03-12T15:25:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- testRunner.TestRunner -->
-    </test> <!-- GitHub POC -->
-  </suite> <!-- Main Test Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

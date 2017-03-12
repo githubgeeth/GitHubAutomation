@@ -10,7 +10,7 @@ public class GitHubLogin {
 	@FindBy(xpath = "//input[@class='btn' and contains(@id, 'Submit')]") 
 	public WebElement GitHubLogIn;
 	
-	//Subba's Private GitHub
+	//Private GitHub
 	@FindBy(xpath = "//a[contains(@href,'login') and text()='Sign in']") 
 	public WebElement Signin;
 	
